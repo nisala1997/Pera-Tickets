@@ -27,7 +27,14 @@ function Header() {
             >
                 <Container>
                     <LinkContainer to='/'>
-                        <Navbar.Brand style={{ color: 'white' }}>PeraEvents</Navbar.Brand>
+                        <Navbar.Brand style={{ color: 'white', display: 'flex', alignItems: 'center' }}>
+                            <img
+                                src="logo.png" // Replace with your logo path
+                                alt=""
+                                style={{ width: '40px', height: '40px', marginRight: '10px' }}
+                            />
+                            PeraEvents
+                        </Navbar.Brand>
                     </LinkContainer>
 
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
