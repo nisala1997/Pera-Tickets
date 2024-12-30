@@ -33,7 +33,7 @@ function Header() {
                                 alt=""
                                 style={{ width: '40px', height: '40px', marginRight: '10px' }}
                             />
-                            Pera-Events
+                            PeraEvents
                         </Navbar.Brand>
                     </LinkContainer>
 
