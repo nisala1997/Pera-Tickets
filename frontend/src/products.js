@@ -10,7 +10,7 @@ export const products = [
     'price': 1000.00,
     'countInStock': 10,
     'rating': 4.5,
-    'numReviews': 12,
+    'numReviews': 120,
   },
   {
     '_id': '2',
@@ -23,7 +23,7 @@ export const products = [
     'price': 1000.00,
     'countInStock': 0,
     'rating': 4.0,
-    'numReviews': 8,
+    'numReviews': 800,
   },
   {
     '_id': '3',
@@ -36,7 +36,7 @@ export const products = [
     'price': 1000.00,
     'countInStock': 5,
     'rating': 3,
-    'numReviews': 12,
+    'numReviews': 500,
   },
   {
     '_id': '4',
@@ -49,7 +49,7 @@ export const products = [
     'price': 1000.00,
     'countInStock': 11,
     'rating': 5,
-    'numReviews': 12,
+    'numReviews': 1200,
   },
   {
     '_id': '5',
@@ -62,7 +62,7 @@ export const products = [
     'price': 1000.00,
     'countInStock': 7,
     'rating': 3.5,
-    'numReviews': 10,
+    'numReviews': 1000,
   },
   {
     '_id': '6',
@@ -75,7 +75,7 @@ export const products = [
     'price': 1000.00,
     'countInStock': 0,
     'rating': 4,
-    'numReviews': 12,
+    'numReviews': 1200,
   },
 ]
 
