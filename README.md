@@ -1,9 +1,8 @@
 Pera-Tickets
 
 
-![DEMO](../master/static/images/1.png)
-![DEMO](../master/static/images/2.png)
-![DEMO](../master/static/images/3.png)
+![DEMO](../master/static/images/Screenshot (663).png)
+
 
 
 # Features
