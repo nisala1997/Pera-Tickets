@@ -1,7 +1,8 @@
 Pera-Tickets
 
 
-![DEMO]([../master/static/images/Screenshot (663).png](https://github.com/nisala1997/Pera-Tickets/blob/main/static/images/Screenshot%20(663).png))
+![Screenshot](https://github.com/nisala1997/Pera-Tickets/raw/main/static/images/Screenshot%20(663).png)
+
 
 
 
