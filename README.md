@@ -8,18 +8,18 @@ Pera-Tickets
 
 
 # Features
-* Full-featured shopping cart
-* Product reviews and ratings
-* Top products carousel
-* Product pagination
-* Product search feature
-* User profile with orders
-* Admin product management
-* Admin user management
-* Admin Order details page
-* Mark orders as a delivered option
-* Checkout process (shipping, payment method, etc)
-* PayPal / credit card integration
+Full-Featured Ticket Cart 
+Event Reviews and Ratings 
+Featured Events Carousel 
+Event Pagination 
+Event Search Feature 
+User Profile with Booking History 
+Admin Event Management 
+Admin User Management 
+Admin Booking Details Page 
+Mark Bookings as Confirmed/Attended
+Streamlined Checkout Process
+PayPal / Credit Card Integration
 
 
 
