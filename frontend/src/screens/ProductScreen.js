@@ -71,7 +71,7 @@ function ProductScreen({ match, history }) {
                                 <Col md={3}>
                                     <ListGroup variant="flush">
                                         <ListGroup.Item>
-                                            <h3>{product.name}</h3>
+                                            <h3>Geethanjalee-2024{}</h3>
                                         </ListGroup.Item>
 
                                         <ListGroup.Item>
@@ -79,11 +79,11 @@ function ProductScreen({ match, history }) {
                                         </ListGroup.Item>
 
                                         <ListGroup.Item>
-                                            Price: ${product.price}
+                                            Price: Rs.1000.00{}
                                         </ListGroup.Item>
 
                                         <ListGroup.Item>
-                                            Description: {product.description}
+                                            Description: Geethanjalee is an annual cultural event by the Faculty of Science at the University of Peradeniya, showcasing student talents in music, dance, drama, and other arts. It celebrates Sri Lanka's rich cultural heritage and contemporary art, fostering community and creativity within the faculty.{}
                                         </ListGroup.Item>
                                     </ListGroup>
                                 </Col>
@@ -96,7 +96,7 @@ function ProductScreen({ match, history }) {
                                                 <Row>
                                                     <Col>Price:</Col>
                                                     <Col>
-                                                        <strong>${product.price}</strong>
+                                                        <strong>Rs.1000.00{}</strong>
                                                     </Col>
                                                 </Row>
                                             </ListGroup.Item>
@@ -181,11 +181,11 @@ function ProductScreen({ match, history }) {
                                                             onChange={(e) => setRating(e.target.value)}
                                                         >
                                                             <option value=''>Select...</option>
-                                                            <option value='1'>1 - Poor</option>
-                                                            <option value='2'>2 - Fair</option>
-                                                            <option value='3'>3 - Good</option>
-                                                            <option value='4'>4 - Very Good</option>
-                                                            <option value='5'>5 - Excellent</option>
+                                                            <option value='1'>1 Star</option>
+                                                            <option value='2'>2 Star</option>
+                                                            <option value='3'>3 Star</option>
+                                                            <option value='4'>4 Star</option>
+                                                            <option value='5'>5 Star</option>
                                                         </Form.Control>
                                                     </Form.Group>
 

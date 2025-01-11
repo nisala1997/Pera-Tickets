@@ -45,11 +45,11 @@ function CartScreen({ match, location, history }) {
                                             <Image src={item.image} alt={item.name} fluid rounded />
                                         </Col>
                                         <Col md={3}>
-                                            <Link to={`/product/${item.product}`}>{item.name}</Link>
+                                            <Link to={`/product/${item.product}`}>Geethanjalee 2024{}</Link>
                                         </Col>
 
                                         <Col md={2}>
-                                            ${item.price}
+                                            Rs.{1000*(item.price/89.99)}
                                         </Col>
 
                                         <Col md={3}>
@@ -91,7 +91,7 @@ function CartScreen({ match, location, history }) {
                     <ListGroup variant='flush'>
                         <ListGroup.Item>
                             <h2>Subtotal ({cartItems.reduce((acc, item) => acc + item.qty, 0)}) items</h2>
-                            ${cartItems.reduce((acc, item) => acc + item.qty * item.price, 0).toFixed(2)}
+                            Rs.{cartItems.reduce((acc, item) => acc + item.qty * (1000*(item.price/89.99)), 0).toFixed(2)}
                         </ListGroup.Item>
                     </ListGroup>
 

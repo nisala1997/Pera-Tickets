@@ -16,12 +16,11 @@ function PlaceOrderScreen({ history }) {
 
     const cart = useSelector(state => state.cart)
 
-    cart.itemsPrice = cart.cartItems.reduce((acc, item) => acc + item.price * item.qty, 0).toFixed(2)
+    cart.itemsPrice = cart.cartItems.reduce((acc, item) => acc + (1000 * (item.price / 89.99)) * item.qty, 0).toFixed(2)
     cart.shippingPrice = (cart.itemsPrice > 100 ? 0 : 10).toFixed(2)
     cart.taxPrice = Number((0.082) * cart.itemsPrice).toFixed(2)
 
     cart.totalPrice = (Number(cart.itemsPrice) + Number(cart.shippingPrice) + Number(cart.taxPrice)).toFixed(2)
-
 
     if (!cart.paymentMethod) {
         history.push('/payment')
@@ -54,7 +53,6 @@ function PlaceOrderScreen({ history }) {
                     <ListGroup variant='flush'>
                         <ListGroup.Item>
                             <h2>Shipping</h2>
-
                             <p>
                                 <strong>Shipping: </strong>
                                 {cart.shippingAddress.address},  {cart.shippingAddress.city}
@@ -87,11 +85,11 @@ function PlaceOrderScreen({ history }) {
                                                     </Col>
 
                                                     <Col>
-                                                        <Link to={`/product/${item.product}`}>{item.name}</Link>
+                                                        <Link to={`/product/${item.product}`}>{}</Link>Geethanjalee 2024
                                                     </Col>
 
                                                     <Col md={4}>
-                                                        {item.qty} X ${item.price} = ${(item.qty * item.price).toFixed(2)}
+                                                        {item.qty} X Rs.{(1000 * (item.price / 89.99)).toFixed(2)} = Rs.{(item.qty * (1000 * (item.price / 89.99))).toFixed(2)}
                                                     </Col>
                                                 </Row>
                                             </ListGroup.Item>
@@ -114,31 +112,30 @@ function PlaceOrderScreen({ history }) {
                             <ListGroup.Item>
                                 <Row>
                                     <Col>Items:</Col>
-                                    <Col>${cart.itemsPrice}</Col>
+                                    <Col>Rs.{cart.itemsPrice}</Col>
                                 </Row>
                             </ListGroup.Item>
 
                             <ListGroup.Item>
                                 <Row>
                                     <Col>Shipping:</Col>
-                                    <Col>${cart.shippingPrice}</Col>
+                                    <Col>Rs.{cart.shippingPrice}</Col>
                                 </Row>
                             </ListGroup.Item>
 
                             <ListGroup.Item>
                                 <Row>
                                     <Col>Tax:</Col>
-                                    <Col>${cart.taxPrice}</Col>
+                                    <Col>Rs.{cart.taxPrice}</Col>
                                 </Row>
                             </ListGroup.Item>
 
                             <ListGroup.Item>
                                 <Row>
                                     <Col>Total:</Col>
-                                    <Col>${cart.totalPrice}</Col>
+                                    <Col>Rs.{cart.totalPrice}</Col>
                                 </Row>
                             </ListGroup.Item>
-
 
                             <ListGroup.Item>
                                 {error && <Message variant='danger'>{error}</Message>}

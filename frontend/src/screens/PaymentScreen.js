@@ -32,16 +32,36 @@ function PaymentScreen({ history }) {
                 <Form.Group>
                     <Form.Label as='legend'>Select Method</Form.Label>
                     <Col>
+                    <Form.Check
+                            type='radio'
+                            label='Debit Card '
+                            id='card'
+                            name='paymentMethod'
+                            value='Card'
+                            checked={paymentMethod === 'Card'}
+                            onChange={(e) => setPaymentMethod(e.target.value)}
+                        />
                         <Form.Check
                             type='radio'
-                            label='PayPal or Credit Card'
+                            label='Credit Card'
+                            id='googlepay'
+                            name='paymentMethod'
+                            value='GooglePay'
+                            checked={paymentMethod === 'GooglePay'}
+                            onChange={(e) => setPaymentMethod(e.target.value)}
+                        />
+                        
+                        <Form.Check
+                            type='radio'
+                            label='PayPal'
                             id='paypal'
                             name='paymentMethod'
-                            checked
+                            value='PayPal'
+                            checked={paymentMethod === 'PayPal'}
                             onChange={(e) => setPaymentMethod(e.target.value)}
-                        >
-
-                        </Form.Check>
+                        />
+                        
+                        
                     </Col>
                 </Form.Group>
 
